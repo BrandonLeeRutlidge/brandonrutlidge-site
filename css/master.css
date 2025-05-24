@@ -150,3 +150,21 @@ p {
   color: var(--text-subtle);
   margin-top: var(--space-xs);
 }
+/* Default: Do not invert images unless in dark mode */
+.invert-on-dark {
+  filter: none;
+}
+
+/* Invert images in dark mode */
+@media (prefers-color-scheme: dark) {
+  .invert-on-dark {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
+[data-theme="light"] .invert-on-dark {
+  filter: none;
+}
+
+[data-theme="dark"] .invert-on-dark {
+  filter: invert(1) hue-rotate(180deg);
+}

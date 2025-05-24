@@ -296,23 +296,24 @@ document.getElementById("paper-content").innerHTML = `
 <p><strong>Visuals (final versions inserted below):</strong></p>
 
 <h3>Figure 1: Dimensional Transition Diagram</h3>
-<img src="assets/images/figure-1.png" alt="Figure 1: Dimensional Transition Diagram"
+<img src="assets/images/figure-1.png" alt="Figure 1"
+     class="invert-on-dark"
      style="max-width: 100%; height: auto; display: block; margin: 1em auto;" />
 
 <h3>Figure 2: Modular Task Network</h3>
-<img src="assets/images/figure-2.png" alt="Figure 2: Modular Task Network"
+<img src="assets/images/figure-2.png" alt="Figure 2"
+     class="invert-on-dark"
      style="width: 50%; height: auto; display: block; margin: 1em auto;" />
 
 <h3>Figure 3: Continuity Stack</h3>
-<img src="assets/images/figure-3.png" alt="Figure 3: Continuity Stack"
+<img src="assets/images/figure-3.png" alt="Figure 3"
+     class="invert-on-dark"
      style="width: 30%; height: auto; display: block; margin: 1em auto;" />
 
 <h3>Figure 4: Timeline of Dimensional Emergence</h3>
-<img src="assets/images/figure-4.png" alt="Figure 4: Timeline of Dimensional Emergence"
+<img src="assets/images/figure-4.png" alt="Figure 4"
+     class="invert-on-dark"
      style="width: 90%; height: auto; display: block; margin: 1em auto;" />
-
-
-
 
   <h2>References</h2>
   <ul>

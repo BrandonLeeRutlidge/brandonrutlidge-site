@@ -1,0 +1,33 @@
+#intro {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md) var(--space-lg);
+}
+
+#intro h2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+#intro p {
+  font-size: var(--font-lg);
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-subtle);
+}
+
+@media (max-width: 768px) {
+  #intro {
+    padding: var(--space-lg) var(--space-sm) var(--space-md);
+  }
+
+  #intro h2 {
+    font-size: 2rem;
+  }
+
+  #intro p {
+    font-size: var(--font-base);
+  }
+}

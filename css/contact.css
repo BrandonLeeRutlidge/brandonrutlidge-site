@@ -1,0 +1,81 @@
+#contact {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  box-sizing: border-box;
+}
+
+#contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+  color: var(--text);
+  text-align: center;
+}
+
+#contact p.subtext {
+  font-size: var(--font-base);
+  color: var(--text-subtle);
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-inline: var(--space-md);
+}
+
+/* Contact buttons: bolder and more tappable */
+.contact-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem var(--space-md); /* 👈 More height */
+  font-size: var(--font-base);
+  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--highlight);
+}
+
+.contact-button:focus,
+.contact-button:focus-visible,
+.contact-button:focus-within {
+  outline: none;
+  background-color: var(--card-bg);
+  border-color: var(--border);
+}
+
+/* Icons that adapt to light/dark themes */
+.contact-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: invert(0%);
+}
+
+[data-theme="dark"] .contact-button img {
+  filter: invert(100%);
+}
+
+/* Truncates long text gracefully */
+.contact-button span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

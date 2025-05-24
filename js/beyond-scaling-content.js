@@ -292,14 +292,27 @@ document.getElementById("paper-content").innerHTML = `
   <h3>Falsifiability</h3>
   <p>The framework's scientific rigor hinges on its testability. Dimensional Cognition posits that cognitive dimensions are hierarchical, with each building on its predecessors. Thus, the model would be falsified if a system achieves 4D reflective cognition—demonstrating autonomous self-modification and meta-reasoning—without first exhibiting the lower dimensions of modularity (2D) or continuity (3D). Such a scenario would undermine the model's claim of sequential, qualitative leaps, providing a clear criterion for evaluation.</p>
 
-  <h2>Appendix</h2>
-  <p><strong>Visuals (to be included in the final version, described for clarity):</strong></p>
-  <ul>
-    <li><strong>Figure 1: Dimensional Transition Diagram.</strong> [Placeholder: Insert image4.png here]</li>
-    <li><strong>Figure 2: Modular Task Network.</strong> [Placeholder: Insert image2.png here]</li>
-    <li><strong>Figure 3: Continuity Stack.</strong> [Placeholder: Insert image.png here]</li>
-    <li><strong>Figure 4: Timeline of Dimensional Emergence.</strong> [Placeholder: Insert image3.png here]</li>
-  </ul>
+<h2>Appendix</h2>
+<p><strong>Visuals (final versions inserted below):</strong></p>
+
+<h3>Figure 1: Dimensional Transition Diagram</h3>
+<img src="assets/images/figure-1.png" alt="Figure 1: Dimensional Transition Diagram"
+     style="max-width: 100%; height: auto; display: block; margin: 1em auto;" />
+
+<h3>Figure 2: Modular Task Network</h3>
+<img src="assets/images/figure-2.png" alt="Figure 2: Modular Task Network"
+     style="width: 50%; height: auto; display: block; margin: 1em auto;" />
+
+<h3>Figure 3: Continuity Stack</h3>
+<img src="assets/images/figure-3.png" alt="Figure 3: Continuity Stack"
+     style="width: 30%; height: auto; display: block; margin: 1em auto;" />
+
+<h3>Figure 4: Timeline of Dimensional Emergence</h3>
+<img src="assets/images/figure-4.png" alt="Figure 4: Timeline of Dimensional Emergence"
+     style="width: 90%; height: auto; display: block; margin: 1em auto;" />
+
+
+
 
   <h2>References</h2>
   <ul>

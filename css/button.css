@@ -2,7 +2,7 @@
 .view-button {
   background-color: var(--button-bg);
   color: var(--button-text);
-  border: 1px solid var(--border);
+  border: none;
   padding: 0.65em 1.2em;
   border-radius: var(--radius);
   font-size: var(--font-base);
@@ -19,15 +19,43 @@
 
 .view-button:hover {
   background-color: var(--button-hover);
-  border-color: var(--accent);
   color: var(--button-text);
 }
 
-.view-button:focus {
-  outline: none;
+/* CONTACT BUTTON */
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.65em 1.2em;
+  border-radius: var(--radius);
+  font-size: var(--font-base);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+  margin: 0 auto var(--space-xs) auto;
+  width: fit-content;
+  max-width: 95vw;
 }
 
-/* OUTLINE BUTTON STYLE (OPTIONAL) */
+.contact-button:hover {
+  background-color: var(--button-hover);
+  color: var(--button-text);
+}
+
+.contact-button img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* OUTLINE BUTTON STYLE */
 .outline-button {
   background: transparent;
   color: var(--text);
@@ -43,7 +71,7 @@
   background-color: var(--highlight);
 }
 
-/* ICON-ONLY BUTTON STYLE (OPTIONAL) */
+/* ICON-ONLY BUTTON STYLE */
 .icon-button {
   background: none;
   border: none;
@@ -63,35 +91,43 @@
 /* DISABLED BUTTON STYLE */
 button:disabled,
 .view-button:disabled,
-.outline-button:disabled {
+.outline-button:disabled,
+.contact-button:disabled {
   background-color: var(--border);
   color: var(--text-subtle);
   cursor: not-allowed;
   opacity: 0.6;
 }
-.contact-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-sm);
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  border: 1px solid var(--border);
-  padding: 0.65em 1.2em;
-  border-radius: var(--radius);
-  font-size: var(--font-base);
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
-  margin: 0 auto var(--space-xs) auto; /* ✅ center horizontally */
-  width: fit-content; /* ✅ exact fit to content */
-  max-width: 95vw; /* ✅ prevent overflow on very small screens */
+
+/* FINAL RESET: REMOVE BLUE CLICK, OUTLINE, SHADOWS */
+button,
+.view-button,
+.contact-button,
+.outline-button,
+a {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.contact-button img {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+button:hover,
+.view-button:hover,
+.contact-button:hover,
+.outline-button:hover {
+  background-color: var(--button-hover);
+  color: var(--button-text);
+}
+
+button:focus,
+button:active,
+.view-button:focus,
+.view-button:active,
+.contact-button:focus,
+.contact-button:active,
+.outline-button:focus,
+.outline-button:active,
+a:focus,
+a:active {
+  outline: none;
+  box-shadow: none;
 }

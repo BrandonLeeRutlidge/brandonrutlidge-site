@@ -1,6 +1,6 @@
 #intro {
   text-align: center;
-  padding: var(--space-xl) var(--space-md) var(--space-lg);
+  padding: 1rem var(--space-md) var(--space-lg); /* reduced top padding */
 }
 
 #intro h2 {
@@ -20,7 +20,7 @@
 
 @media (max-width: 768px) {
   #intro {
-    padding: var(--space-lg) var(--space-sm) var(--space-md);
+    padding: 1rem var(--space-sm) var(--space-md); /* same top reduction for mobile */
   }
 
   #intro h2 {

@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerContainer = document.getElementById("header-container");
   if (!headerContainer) return;
 
-  const isRoot = location.pathname === "/" || location.pathname === "/index.html";
-  const iconPath = isRoot ? "assets/icons/moon.svg" : "../assets/icons/moon.svg";
+  const iconPath = "/assets/icons/moon.svg"; // Use root-relative path
 
   headerContainer.innerHTML = `
     <header>
@@ -14,11 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
           <a href="/research/">Research</a>
           <a href="/about/">About</a>
           <a href="/contact/">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="${iconPath}" alt="Toggle Theme" />
+          </button>
         </nav>
       </div>
-      <button id="theme-toggle" aria-label="Toggle theme">
-        <img id="theme-icon" src="${iconPath}" alt="Toggle Theme" />
-      </button>
     </header>
   `;
 });

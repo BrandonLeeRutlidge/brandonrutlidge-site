@@ -22,12 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     button.className = "view-button contact-button"; // ✅ Apply both styles
     button.href = action;
 
-    button.innerHTML = `
-      <div style="display: flex; align-items: center; gap: var(--space-sm);">
-        <img src="${icon}" alt="${alt}" />
-        <span>${label}</span>
-      </div>
-    `;
+button.innerHTML = `
+  <div class="contact-inner">
+    <img src="${icon}" alt="${alt}" />
+    <span>${label}</span>
+  </div>
+`;
+
 
     container.appendChild(button);
   });

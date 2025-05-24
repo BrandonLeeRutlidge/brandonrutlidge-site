@@ -66,6 +66,7 @@ body {
   left: 0;
   right: 0;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Remove scrollbar arrows (Chrome, Edge, Safari) */

@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const contacts = [
     {
-      icon: "assets/icons/mail.svg",
+      icon: "../assets/icons/mail.svg",
       alt: "Send email",
       label: "admin@brandonrutlidge.com",
       action: "mailto:admin@brandonrutlidge.com"
     },
     {
-      icon: "assets/icons/phone.svg",
+      icon: "../assets/icons/phone.svg",
       alt: "Call Brandon",
       label: "+44 7719 410 264",
       action: "tel:+447719410264"

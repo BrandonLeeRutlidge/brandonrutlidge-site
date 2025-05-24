@@ -1,26 +1,23 @@
-const toggleButton = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
-const root = document.documentElement;
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
 
-// Only update icon, don’t re-set the theme on load (it's already set early)
-function updateThemeIcon(theme) {
-  const icon = theme === 'dark' ? 'moon' : 'sun';
-  themeIcon.src = `assets/icons/${icon}.svg`;
-}
+  if (!themeToggle || !themeIcon) return;
 
-function setTheme(theme) {
-  root.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-  updateThemeIcon(theme);
-}
+  const isRoot = location.pathname === "/" || location.pathname === "/index.html";
+  const assetPath = isRoot ? "assets/icons" : "../assets/icons";
 
-function toggleTheme() {
-  const current = root.getAttribute('data-theme');
-  const next = current === 'dark' ? 'light' : 'dark';
-  setTheme(next);
-}
+  const setTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+    themeIcon.src = `${assetPath}/${theme === "dark" ? "sun" : "moon"}.svg`;
+  };
 
-toggleButton.addEventListener('click', toggleTheme);
+  const currentTheme = localStorage.getItem("theme") || "light";
+  setTheme(currentTheme); // Initialize icon and theme
 
-// Initialize only the icon (theme is already set in <head>)
-updateThemeIcon(document.documentElement.getAttribute('data-theme'));
+  themeToggle.addEventListener("click", () => {
+    const newTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+  });
+});

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Beyond Scaling: A Dimensional Roadmap to Artificial General Intelligence (AGI)",
       desc: "This paper proposes Dimensional Cognition — a 4D framework for AGI development based on memory, emotion, modular reasoning, and self-modification.",
       date: "20 May 2025",
-      link: "beyond-scaling.html"
+      link: "/beyond-scaling/"
     }
   ];
 

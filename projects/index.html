@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Brandon Rutlidge</title>
+
+  <!-- Modular CSS Files -->
+  <link rel="stylesheet" href="../css/master.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/theme-toggle.css" />
+  <link rel="stylesheet" href="../css/research.css" />
+  <link rel="stylesheet" href="../css/button.css" />
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <div class="scroll-container">
+    <main>
+      <section id="research">
+        <h3>Research</h3>
+        <p class="section-subtitle">Published frameworks and experiments in AGI cognition</p>
+        <div class="research-grid">
+          <!-- Injected by research-content.js -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modular JS Files -->
+  <script src="../js/header.js"></script>
+  <script src="../js/theme-toggle.js"></script>
+  <script src="../js/research-content.js"></script>
+</body>
+</html>

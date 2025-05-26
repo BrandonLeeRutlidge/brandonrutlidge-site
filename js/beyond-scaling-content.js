@@ -1,7 +1,7 @@
 document.getElementById("paper-content").innerHTML = `
 <article>
   <h1>Beyond Scaling: A Dimensional Roadmap to Artificial General Intelligence (AGI)</h1>
-  <p class="section-subtitle">Brandon Lee Rutlidge | Published: 20 May 2025</p>
+  <p class="section-subtitle">Brandon Lee Rutlidge | Published: 24 May 2025</p>
 
   <h2>Abstract</h2>
   <p><strong>Abstract.</strong> Scaling large language models has driven remarkable AI progress, yet it struggles to deliver human-like memory, reasoning, or identity. This paper introduces Dimensional Cognition, a framework that redefines intelligence as a product of qualitative advancements in cognitive architecture, not just computational scale. We propose a four dimensional model to guide Artificial General Intelligence (AGI) development: 1D Predictive Streams, processing linear data with limited continuity; 2D Modular Systems, breaking tasks into specialized subtasks but lacking unity; 3D Temporal and Emotional Continuity, adding persistent memory and simulated emotions for adaptive goals; and 4D Reflective Cognition, enabling self-awareness and autonomous evolution. Drawing on cognitive science, this model exposes the limits of current AI and offers testable benchmarks to measure progress. Our findings suggest that AGI requires layered, structural innovations modularity, continuity, and reflection beyond bigger models. This roadmap paves the way for artificial superintelligence, with significant implications for ethical design. By prioritizing cognitive depth, we can build systems that not only mimic human tasks but also adapt and reflect, ensuring responsible development for a transformative future.</p>
